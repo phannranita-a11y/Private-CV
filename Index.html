@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CV</title>
+    <style>
+       /*Left side*/
+         h1{
+         font-size: 40px;
+         font-family: Arial;
+         border-radius:50%;
+
+        }
+        
+        .profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+            display: block;
+            margin: 0 auto;
+        }
+        .cv{
+            display: flex;
+        }
+        .left{
+            width:300px;
+            min-height: 100vh;
+            min-width: 40vh;
+            background-color:#164a3b;
+            color: white;
+            padding: 30px;
+            h1{
+                text-align:center;
+                font-size: 30px;
+
+            }
+            h3{
+                text-align:center;
+                font-family: Arial, sans-serif;
+                color: #9be7c2;
+            }
+        }
+        h2{
+            font-size: 18px;
+            font-family:Arial, sans-serif;
+            color: white;}
+
+            hr{
+                border: none;
+                border-top:2px solid white;
+                width: 50px;
+                min-width:50vh;
+                margin: 10px;
+
+            }
+            p{
+                font-family: Arial;
+            }
+        
+        
+        .Skills {
+                display: flex;
+                align-items: center;
+                margin: 12px 0;
+            }
+        .Skills p{
+                width: 100%;
+                margin: 0;
+            }
+        .bar {
+                width: 200px;
+                height: 10px;
+                background-color: #52766c;
+                border-radius: 10px;
+            }
+        .progress {
+                height: 10px;
+                border-radius: 10px;
+                background-color: #9be7c2;
+            }
+        .html {
+                width: 85%;
+            }
+        .css {
+                width:85%
+            }
+        .javascript {
+                width: 70%;
+            }
+        .cpp {
+                width: 60%;
+            }
+        .languages{
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin:6px 0;
+            font-family: Arial;
+        }
+        /*.languages span:nth-child(0) {
+            width:100px;
+            flex:1;*/
+
+        .languages span:first-child {
+            width: 100px;
+        }
+        .languages span:last-child{
+            flex: 1;
+        }
+
+        /*Right side*/
+        .cv{
+            display:flex;}
+        
+        .right{
+            width: calc(100% - 300px);
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            padding: 30px;
+            .title{
+                display: flex;
+                align-items: center;
+            }
+            .title h2{
+                font-family: Arial;
+                color: #145a43;
+            }
+            .title hr{
+                flex: 1;
+                border: none;
+                border-top: 2px solid #9be7c2;
+                margin: 0 0 0 15px;
+            }
+            h3{
+            font-family: Arial;
+            color: #145a43;
+            }
+        }
+        
+        .icon{
+            display: inline-flex;
+            width: 45px;
+            height: 45px;
+            background-color: #c8efd5;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .about {
+            margin-top: 10px;
+        }
+        .about > p{
+            font-family: Arial;
+            color:darkslategray;
+            line-height: 1.6;
+            margin-left: 55px;
+            }
+        
+        .education {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 10px;
+            margin-left: 55px;
+        }
+        .education::before{
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom:10px;
+            width: 2px;
+            background-color: #9be7c2;
+        }
+        .education-item {
+            
+            position: relative;
+            margin-bottom: 25px;
+           
+        }
+        .education-item::before{
+            content: '';
+            position:absolute;
+            left: -30px;
+            top:5px;
+            width: 12px;
+            height: 12px;
+            background-color: #164a3b;
+            border-radius: 50%;
+            z-index: 2;
+            
+        }
+        
+        .education-text h3{
+            margin: 0 0 4px 0;
+            font-size: 18px;
+            color: #145a43;
+            }
+        .education-text p{
+                font-size: 18px;
+                color: gray;
+                margin:0 0 4px 0;
+            }
+        .education-text .date{
+                font-size: 13px;
+                color: #777;
+                margin: 0;
+            }
+        .project-list{
+            margin-top: 25px;
+        }
+        .project-item{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .project-icon{
+            display: inline-flex;
+            width: 48px;
+            height: 48px;
+            background-color: #d1f2dc;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+            margin-right: 18px;
+        }
+        .project-text h3{
+            font-size: 16px;
+            color:#145a43;
+            margin: 0 0 6px 0;
+            font-weight: bold;
+
+        }
+        .project-text p{
+             font-size: 18px;
+                color:darkslategray;
+                margin: 0;
+                font-size: 15px;
+                line-height: 1.4;;
+
+        }
+        .project-text{
+            font-family: Arial, sans-serif;
+            
+        }
+        .career-text p{
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: darkslategray;
+            margin-left: 55px;
+            line-height: 1.5;
+        }
+    
+
+    </style>
+    </head>
+
+   <body>
+   <div class="cv">
+   <div class="left">
+       <img src="photo_2026-10-15_17-28-19.jpg"
+        alt="HTML" class="profile">
+       <h1>PHANN RANITA</h1>
+       <h3>Junior Frontend Developer</h3><br>
+
+       <h2>👤Contact</h2>
+       <hr>
+       <p>📞 +855 66 323 129</p>
+       <p>✉️ phannranita@gmail.com</p>
+       <p>📍 Sangkat Stueng Mean Chey 1, Khan Meanchey,
+      Phnom Penh, Cambodia<br></p>
+
+       <h2>⚙️ Skills</h2>
+       <hr>
+       <div class="Skills">
+          <p>HTML</p>
+           <div class="bar">
+              <div class="progress html"></div>
+             </div>
+        </div>
+
+        <div class="Skills">
+            <p>CSS</p>
+            <div class="bar">
+               <div class="progress css"></div>
+            </div>
+        </div>
+     
+        <div class="Skills">
+            <p>JavaScript</p>
+            <div class="bar">
+               <div class="progress javascript"></div>
+            </div>
+        </div>
+
+        <div class="Skills">
+           <p>C++</p>
+              <div class="bar">
+                  <div class="progress cpp"></div>
+            </div>  
+        </div>
+
+        <h2>🌐 Languages</h2>
+        <hr>
+        <div class="languages">
+         <span>Khmer</span>  
+         <span>Native</span>
+        </div>
+ 
+       <div class="languages">
+         <span>English</span>
+         <span>Intermediate</span>
+       </div>
+
+    </div>
+
+    <!--Right side-->
+    <div class="right">
+       <div class="title">
+         <h2>
+         <span class="icon">👤</span> 
+         About Me
+         </h2>
+         <hr>
+        </div>
+
+        <div class="about">
+            <p>
+                I am an IT student with the strong interest in web development. I enjoy learning new technologies and building simple, useful websites. 
+                I am currently improving my skills in HTML, CSS, JavaScript and C#. I am a fast learner, hardworking and always open to new challenges.
+
+            </p>
+            <div class="title">
+              <h2>
+                <span class="icon">🎓</span>
+                Education
+              </h2>
+              <hr>
+            </div>
+           <div class="education">
+           
+              <div class="education-item">
+                 <div class="education-text">
+                    
+                     <h3>Royal University of Phnom Penh</h3><br>
+                     <p>Information Technology</p>
+                     <p class="date">2024-present</p>
+                    </div>
+                </div>
+
+             <div class="education-item">
+                   <div class="education-text">
+                     <h3>Preah Norodom Ranariddh High School</h3>
+                     <p>High School</p>
+                     <p class="date">2021-2024(Grade C)</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">
+                <h2>
+                    <span class="icon">💼 </span>
+                    Project
+                </h2>
+                <hr>
+            </div>
+
+                <div class="project-list">
+                    <div class="project-item">
+                        <span class="project-icon">💻</span>
+                           <div class="project-text">
+                               <h3>Personal CV Website</h3>
+                               <p>Create a personal CV webpage using HTML and CSS</p>  
+                            </div>
+                    </div>
+                    
+                    <div class="project-item">
+                       <span class="project-icon">💻</span>
+                            <div class="project-text">
+                                <h3>Product List Website</h3>
+                                <p>Build a simple product webpage with JavaScript buttons and basic interactions.</p>
+                            </div>
+                    </div>
+
+                    <div class="project-item">
+                       <span class="project-icon">💻</span>
+                        <div class="project-text">
+                               <h3>Library Management System</h3>
+                               <p>Developed a basic library management system using C++ and data structure.</p>
+                        </div>                      
+                    </div>             
+                </div>
+           </div>      
+        <div class="title">
+            <h2>
+                <span class="icon">🎯</span>
+                Challenges
+            </h2>
+            <hr>
+        </div>
+        <div class="career-text">
+            <p>To become a professional web developer and continue developing my programming, problem-solving and team work skills.</p>
+        </div>
+
+
+     </div>
+ </div>
+</body>
+</html>
